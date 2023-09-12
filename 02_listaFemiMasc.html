@@ -7,8 +7,28 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+
+    let fem = []
+    let masc = []
+
     //PROCESSAMENTO
 
+    for (const nome of listaDeNomes) {
+        const sexo = prompt(`${nome} é Masc ou Fem?`).toUpperCase();
+
+        if (sexo == "M") {
+            masc.push(nome);
+        }
+        else {
+            fem.push(nome);
+        }
+
+    }
+
     //SAÍDA
+
+    document.write(`masculino : ${masc} <br> feminino: ${fem}`)
+
 
 </script>
