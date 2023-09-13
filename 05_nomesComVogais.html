@@ -7,6 +7,24 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José",  "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"]; 
+
+    let nomecomVogal = []
+    const Vogal = ["A", "E", "I", "0", "U"];
+    
+    for (const nome of listaDeNomes) {
+        
+        if (Vogal.includes(nome[0])){
+
+            nomecomVogal.push(nome)
+        }
+        
+    }
+
+    document.write(`os nomens em ordem alfabetica são: ${nomecomVogal.sort().join(", ")} `);
+    
+
+
     //PROCESSAMENTO
 
     //SAÍDA
